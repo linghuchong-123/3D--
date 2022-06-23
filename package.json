@@ -6,13 +6,15 @@
   "author": "linghuchong-123",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack --config webpack.config.js"
+    "dev": "webpack-dev-server --mode development --devtool eval-cheap-module-source-map",
+    "build": "webpack --mode production --devtool source-map "
   },
   "dependencies": {
     "@types/three": "^0.138.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "three": "^0.138.3",
+    "url-loader": "^4.1.1",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
   },
